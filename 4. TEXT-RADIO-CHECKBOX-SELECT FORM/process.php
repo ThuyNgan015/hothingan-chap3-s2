@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $message = $_POST['message'];
     $province = $_POST['province'];
     $gender = $_POST['gender'];
-    $languages = $_POST['objects'];
+    $objects = $_POST['objects'];
 }
 ?>
 
@@ -45,11 +45,9 @@ if (isset($_POST['submit'])) {
         <td><?php
         echo $province;
             ?></td>
-        <td>
-            <?php
-                echo $gender;
-            ?>
-        </td>
+        <td><?php
+        echo $gender;
+            ?></td>
         <td><?php
         for ($i=0; $i<count($objects); $i++){
             if($i<count($objects)-1){
